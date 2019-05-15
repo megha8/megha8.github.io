@@ -18,52 +18,57 @@
          
             </p>
             <p>
-            For this assignment, I got inspired by Joshua box example in class and I tried to create a similar box.
-
-            <img src="Paper prototype.jpeg" width=450 height=450></br></br></br></br>
+            For this assignment, I got inspired by Joshua box example in class and I tried to create a similar box.</br></br>
 
 I started by creating sides in onshape. I wanted to have 3 kinds of shapes for the 6 sides of the cube. It was difficult to figure out the placement of notches, so I did paper prototyping to figure out the sides.</br></br>
 
 Once, I did that I created the shapes in Onshape and exported the DXF files to kiCad. In kiCad I faced some issues, the parts did not show up as in Onshape but exported as solid figures.
 So after talking with Lucas I came to know that we need to add a 0 to the 'Line width' and change the value of 'import scale' from 1.0000 to 25.4 to convert to mm scale!</br></br>
 
+Line width and import scale options:</br>
 <img src="Paper prototype.jpeg" width=450 height=450></br></br></br></br>
 
-kiCad on my laptop didn't show the button to add origin somehow, so I added the origin using the top nav bar option:</br>
+KiCad on my laptop didn't show the button to add origin somehow, so I added the origin using the top nav bar option:</br>
 Place -> Grid Origin</br></br>
+
+No button available to select grid origin on the right nav bar:
+<img src="Paper prototype.jpeg" width=450 height=450></br></br></br></br>
+
+Once I changed the dimentions and added origin, I exported the .gbr file and opened it in Bantam tools.</br>
+I changed the material size and placement to:</br></br>
+
+Material size:</br>
+Thickness = 0.06 in</br></br>
+Height = 10 cm</br></br>
+Width = 7 cmThickness = 0.06 in</br></br>
+Length = 10 cm</br></br>
+Width = 7 cm</br></br>
+
+Placement:</br></br>
+X = 4 mm</br></br>
+Y = 4 mm</br></br>
+Width = 1.54 mm</br></br>
+
+Placement of shape piece in Bantam Tools:</br></br>
+<img src="Paper prototype.jpeg" width=450 height=450></br></br></br></br>
+
+Then I deselected 'traces' tab to only have two things cut 'holes' and 'outline'.</br>
+
+The part showed some red spots and a message on the right: 'Marked areas need a smaller tool'.</br>
+
+To remove the error I went back to the lecture video and realized I did not add kerf to the the parts. I went back to edit the files in Onshape and added kerf.</br></br>
+
+Kerf added to shapes in Onshape</br></br>
+<img src="Paper prototype.jpeg" width=450 height=450></br></br></br></br>
+
+I did the same steps again using kiCad and then opened the file in Bantam Tools. Again it showed the same error.
+
+<img src="Paper prototype.jpeg" width=450 height=450></br></br></br></br>
 
 FR1 dimensions: </br></br>
 Thickness = 0.06 in</br></br>
 Length = 10 cm</br></br>
 Width = 7 cm</br></br>
-
-
-After creating the shapes in Onshape, I exported the shapes onto Illustrator individually and placed them together in order to cut them using the laser cutter.</br>
-
-Final shapes created using Illustrator:</br>
-<img src="Screen Shot 2019-05-06 at 11.29.59 PM.png" width=450 height=300></br></br></br></br>
-
-I went ahead and cut the shapes on an acrylic sheet using the laser cutter. </br>
-I used lab recommended settings.</br></br>
-
-Speed = 8%</br>
-Power = 100%</br>
-Frequency = 100%</br></br>
-
-<h4>Laser Cutting at the Mill</h4></br>
-</br>
-<img src="Laser cutter.mov" width=450 height=450></br></br></br></br>
-
-When I tried to assemble the round shapes with the stick shape, the fit was very lose and the rivet on the outer shapes got stuck on the stick and did not rotate fully.</br></br>
-
-<img src="IMG_8240.MOV" width=450 height=450></br></br></br></br>
-
-As I did not have any acrylic sheet left, I tried to add the outer shapes on the central flower shaped piece along with the stick. The fit was perfect and all the pieces moved smoothly, but the created object was very simple. </br></br>
-
-<img src="IMG_8241.JPG" width=450 height=450></br></br></br></br>
-
-Assembled pinwheel:</br>
-<img src="IMG_8244.MOV" width=450 height=450></br></br>
 
 Source Files: </br></br>
 <a href="https://cad.onshape.com/documents/ee2bb60a6c6f998a897317d9/w/16380280ace4114d288dd1ab/e/b373d83530cfe3415ab54bcc">Onshape file</a></br>
