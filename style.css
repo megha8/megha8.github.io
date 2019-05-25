@@ -67,3 +67,7 @@ a {
   text-decoration: none;
 }
 
+#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+}
